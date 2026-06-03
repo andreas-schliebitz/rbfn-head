@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "rbfn-head"
+version = "0.1.0"
+description = "Lightly compatible implementation of a projection head for Self-Supervised Learning based on Radial Basis Function Networks (RBFN)."
+authors = [
+    "Andreas Schliebitz <a.schliebitz@hs-osnabrueck.de>",
+    "Heiko Tapken <h.tapken@hs-osnabrueck.de>",
+    "Martin Atzmueller <martin.atzmueller@uni-osnabrueck.de>",
+]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{ include = "rbfn_head" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+lightly = "1.5.22"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "9.0.1"
+black = "25.11.0"
+
+[tool.pytest.ini_options]
+addopts = "-s"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
