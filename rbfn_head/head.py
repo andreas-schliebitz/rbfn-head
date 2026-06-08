@@ -17,7 +17,7 @@ class RBFNProjectionHead(ProjectionHead):
         radial_function: Callable = gaussian,
         norm_function: Callable = euclidian,
         normalization: bool = True,
-        num_layers: int = 2,
+        num_layers: int = 3,
         batch_norm: bool = False,
     ) -> None:
         layers: list[tuple[int, int, nn.Module | None, nn.Module | None]] = [
